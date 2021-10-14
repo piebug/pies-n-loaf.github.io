@@ -58,7 +58,8 @@ body.home {
     font-family: 'Homemade Apple', cursive;
     font-size: 7em;
     margin-top: 5rem;
-    margin-bottom: .2rem;
+    margin-bottom: 0;
+    padding: 0 10px;
   }
   
   .site-intro {
@@ -72,15 +73,41 @@ body.home {
       margin-bottom: 2rem;
 
       &:first-child {
-        width: 60%;
+        width: 55%;
       }
     }
+  }
+
+  .site-title {
+    display: none;
   }
 }
 
 .site-header,
 .site-footer {
   border: none;
+}
+
+.site-nav {
+  text-transform: lowercase;
+  font-size: 1.25rem;
+
+  a {
+    &:hover {
+      color: $brand-color;
+      text-decoration: solid underline $brand-color 3px;
+    }
+
+    &:not(:last-child)::after {
+      content: "\25CF"; // flat circle
+      color: $brand-color;
+      font-size: .8em;
+
+      display:inline-block;
+      text-decoration: none !important;
+      padding-left: 1.25rem;
+    }
+  }
 }
 
 pre,
