@@ -1,0 +1,89 @@
+// Base styles for pie dough
+body {
+  #pieLatticeA,
+  #pieLatticeB {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/images/pie-texture.png");
+  }
+
+  #pieLatticeA {
+    clip-path: polygon(0 0,80% 0, 0 4%);
+    background-color: #ECA040;
+    z-index: -1;
+  }
+  
+  #pieLatticeB {
+    clip-path: polygon(20% 0, 100% 0, 100% 3.5%);
+    background-color: #F8C770;
+    z-index: -2;
+  }
+}
+
+// Header, footer, and nav styles
+.site-header,
+.site-footer {
+  border: none;
+}
+
+.site-header {
+  padding-top: .8rem;
+
+  a:active {
+    color: $brand-color;
+  }
+}
+
+.site-title {
+  font-family: 'Homemade Apple', cursive;
+  display: inline-block;
+  padding: 0 5px;
+
+  &:hover,
+  &:focus {
+    border-bottom: solid $brand-color 3px;
+    text-decoration: none;
+  }
+}
+
+.site-nav {
+  text-transform: lowercase;
+  font-size: 1.25rem;
+
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: solid underline $brand-color 3px;
+    }
+
+    &:not(:last-child)::after {
+      content: "\25CF"; // flat circle
+      color: $brand-color;
+      font-size: .8em;
+
+      display:inline-block;
+      text-decoration: none;
+      padding-left: 1.25rem;
+    }
+  }
+}
+
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Main content styles
+.page-content {
+  a {
+    font-weight: 500;
+
+    &:hover {
+      color: #521424;
+      text-decoration-thickness: 2px;
+    }
+  }
+}
