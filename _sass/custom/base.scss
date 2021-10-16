@@ -97,27 +97,7 @@ body {
   }
 }
 
-// Main content styles
-.page-content {
-  a {
-    font-weight: 500;
-
-    &:hover {
-      // color: #521424;
-      // color: #5c3045;
-      color: $accent-color;
-      text-decoration-thickness: 2px;
-    }
-  }
-
-  h1 {
-    text-transform: lowercase;
-    color: $brand-color;
-    font-weight: 700;
-  }
-}
-
-// Niche styles
+// Footer content
 .copyright {
   font-style: italic;
   margin-top: auto;
@@ -141,5 +121,25 @@ body {
     &:hover {
       text-decoration: solid underline $accent-color 2px;
     }
+  }
+}
+
+// Main content styles
+.page-content {
+  a {
+    font-weight: 500;
+
+    &:hover {
+      // color: #521424;
+      // color: #5c3045;
+      color: $accent-color;
+      text-decoration-thickness: 2px;
+    }
+  }
+
+  h1 {
+    text-transform: lowercase;
+    color: $brand-color;
+    font-weight: 700;
   }
 }
