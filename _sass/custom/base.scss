@@ -33,7 +33,7 @@ body {
   padding-top: .8rem;
 
   a:active {
-    color: $brand-color;
+    color: $accent-color;
   }
 }
 
@@ -44,7 +44,7 @@ body {
 
   &:hover,
   &:focus {
-    border-bottom: solid $brand-color 3px;
+    border-bottom: solid $accent-color 3px;
     text-decoration: none;
   }
 }
@@ -56,7 +56,7 @@ body {
   a {
     &:hover,
     &:focus {
-      text-decoration: solid underline $brand-color 3px;
+      text-decoration: solid underline $accent-color 3px;
     }
 
     &:not(:last-child)::after {
@@ -71,6 +71,10 @@ body {
   }
 }
 
+.site-footer h2 {
+  font-weight: 700;
+}
+
 .footer-col-wrapper {
   display: flex;
   justify-content: space-between;
@@ -82,8 +86,17 @@ body {
     font-weight: 500;
 
     &:hover {
-      color: #521424;
+      // color: #521424;
+      // color: #5c3045;
+      color: $accent-color;
       text-decoration-thickness: 2px;
     }
+  }
+
+  h1 {
+    text-transform: lowercase;
+    color: $brand-color;
+    font-weight: 700;
+    margin-top: 5rem;
   }
 }
