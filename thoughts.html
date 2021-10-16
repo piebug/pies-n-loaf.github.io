@@ -4,19 +4,36 @@ title: Thoughts
 permalink: /thoughts/
 ---
 {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   <ul class="post-list">
     {%- for post in site.posts -%}
-    <li>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
+    <li id="article-{{ forloop.index }}" role="article">
+      <ul class="post-categories">
+        {%- for category in post.categories -%}
+          <li>{{ category }}</li>
+        {%- endfor -%}
+      </ul>
+
+      <h2>
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
-      </h3>
+      </h2>
+
+      <div class="post-meta">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span>{{ post.date | date: date_format }}</span>
+
+        <ul class="post-tags">
+          {%- for tag in post.tags -%}
+            <li>{{ tag }}</li>
+          {%- endfor -%}
+        </ul>
+      </div>
+
       {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
+        <div id="article-{{ forloop.index }}-excerpt" class="post-excerpt">
+          {{ post.excerpt }}
+        </div>
       {%- endif -%}
     </li>
     {%- endfor -%}
