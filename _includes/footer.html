@@ -1,0 +1,28 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <h2>made by sandy.</h2>
+
+        {%- assign current_year = site.time | date: "%Y" -%}
+        <span class="copyright">
+          &copy; 2021{% if current_year != '2021' %}&ndash;{{ current_year }}{% endif %} {{ site.author }}
+        </span>
+      </div>
+
+      <div class="footer-col ">
+        <ul class="social-media-list">
+          {% for i in site.data.social_links %}
+            <li>
+              <a rel="me" href="{{ i.base_url }}{{ i.username }}">
+                {% if i.ionicon %}<ion-icon name="{{ i.ionicon }}"></ion-icon>{% endif %} {{ i.username }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
