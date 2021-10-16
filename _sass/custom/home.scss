@@ -62,3 +62,17 @@ body.home {
     display: none;
   }
 }
+
+.pie-signature {
+  display: flex;
+  align-items: start;
+  margin-top: 4rem;
+
+  .pie-icon svg {
+    height: 200px;
+  }
+  .pie-slice-icon svg {
+    height: 125px;
+    margin-top: 8px;
+  }
+}
