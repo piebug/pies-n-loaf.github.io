@@ -1,4 +1,37 @@
 // Styles specific to posts
+.post-list header {
+  display: flex;
+  flex-direction: column-reverse;
+
+  h2 {
+    text-transform: lowercase;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    margin-bottom: 0;
+
+    .post-link {
+      color: $brand-color-dark;
+    }
+  }
+}
+
+.post-info {
+  display: flex;
+
+  .post-meta {
+    text-align: end;
+    min-width: 16%;
+    margin-right: 1rem;
+  }
+}
+
+.post-date {
+  text-transform: uppercase;
+  color: $grey-color-dark;
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+
 .post-categories,
 .post-tags {
   list-style: none;
@@ -6,12 +39,28 @@
 
   & > li {
     display: inline-block;
-    padding: 3px;
-    margin-right: 3px;
-    background-color: #F8C770;
+  }
+}
+
+.post-categories {
+  font-variant: small-caps;
+  margin-bottom: -3px;
+
+  & > li {
+    font-size: 1.4rem;
+    padding-right: 8px;
   }
 }
 
 .post-tags {
+  text-transform: lowercase;
   display: inline-block;
+
+  & > li {
+    font-size: 1rem;
+    color: $text-color;
+    border-right: solid 5px #fddb9e;
+    line-height: .9rem;
+    padding: 0 8px;
+  }
 }
