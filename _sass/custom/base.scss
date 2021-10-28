@@ -39,7 +39,7 @@ body {
 }
 
 .site-footer {
-  margin-top: 3rem;
+  text-align: center;
 
   h2 {
     font-size: 1.25em;
@@ -48,6 +48,13 @@ body {
     a {
       color: inherit;
     }
+  }
+
+  .border {
+    display: inline-block;
+    border-top: 1px solid #f5b64f;
+    width: 20%;
+    margin-bottom: 3rem;
   }
 }
 
