@@ -20,13 +20,13 @@ body.home {
   
   #pieLatticeC {
     clip-path: polygon(30% 0%, 58% 0, 0 99%, 0 42%);
-    background-color: #f5b64f;
+    background-color: $pie-lattice-color-C;
     z-index: -3;
   }
   
   #pieLatticeD {
     clip-path: polygon(0 35%, 0 0, 8% 0, 100% 55%, 100% 95%);
-    background-color: #fddb9e;
+    background-color: $pie-lattice-color-D;
     z-index: -4;
   }
 

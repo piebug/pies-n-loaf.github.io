@@ -12,13 +12,13 @@ body {
 
   #pieLatticeA {
     clip-path: polygon(0 0,80% 0, 0 4%);
-    background-color: #ECA040;
+    background-color: $pie-lattice-color-A;
     z-index: -1;
   }
   
   #pieLatticeB {
     clip-path: polygon(20% 0, 100% 0, 100% 3.5%);
-    background-color: #F8C770;
+    background-color: $pie-lattice-color-B;
     z-index: -2;
   }
 }
@@ -52,7 +52,7 @@ body {
 
   .border {
     display: inline-block;
-    border-top: 1px solid #f5b64f;
+    border-top: 1px solid $pie-lattice-color-C;
     width: 20%;
     margin-bottom: 3rem;
   }
