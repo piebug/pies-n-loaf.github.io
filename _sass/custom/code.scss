@@ -1,8 +1,19 @@
 // Code block and syntax styles
 pre,
 code {
-  font-family: 'Anonymous Pro', monospace;
-  // background-color: #FDEDEE;
+  font-family: 'Oxygen Mono', monospace;
+  font-size: 14px;
+  background-color: #FDEDEE;
+  border-color: #F6CBCE;
+  // border-color: #F0A8AE;
   // background-color: #faf4ed;
-  background-color: #f5eaf5;
+  // background-color: #f5eaf5;
+}
+
+pre {
+  padding: 1rem;
+}
+
+code {
+  padding: 3px 6px;
 }
