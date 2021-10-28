@@ -59,7 +59,7 @@ body {
 }
 
 .site-title {
-  font-family: 'Homemade Apple', cursive;
+  font-family: $title-font-family;
   display: inline-block;
 
   .pie-signature {

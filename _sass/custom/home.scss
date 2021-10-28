@@ -32,7 +32,7 @@ body.home {
 
   h1 {
     color: $text-color;
-    font-family: 'Homemade Apple', cursive;
+    font-family: $title-font-family;
     font-size: 7em;
     margin-bottom: -.5rem;
   }
