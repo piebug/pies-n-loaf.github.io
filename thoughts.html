@@ -23,12 +23,12 @@ permalink: /thoughts/
 
       <div class="post-info">
         <div class="post-meta">
-          {%- assign date_format = site.minima.date_format | default: "%-d %b. %Y" -%}
-          <span class="post-date">{{ post.date | date: date_format }}</span>
+          {%- assign date_format = site.minima.date_format | default: "%-d %b %Y" -%}
+          <div class="post-date">{{ post.date | date: date_format }}</div>
 
           <ul class="post-tags" aria-description="Post tags">
             {%- for tag in post.tags -%}
-              <li>{{ tag }}</li>
+              <li><span class="tag">#</span>{{ tag }}</li>
             {%- endfor -%}
           </ul>
         </div>

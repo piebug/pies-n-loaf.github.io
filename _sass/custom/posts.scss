@@ -25,6 +25,11 @@
   }
 }
 
+.post-list > li,
+.post-info > .post-meta {
+  margin-bottom: $spacing-unit / 2;
+}
+
 .post-date {
   text-transform: uppercase;
   color: $grey-color-dark;
@@ -57,11 +62,30 @@
   text-transform: lowercase;
   display: inline-block;
 
+  .tag {
+    color: $pie-lattice-color-B;
+    font-family: $serif-font-family;
+    font-weight: 500;
+    padding-right: .2rem;
+  }
+
   & > li {
-    font-size: 1rem;
     color: $text-color;
-    border-left: solid 5px $pie-lattice-color-D;
+    font-size: 1rem;
     line-height: .9rem;
-    padding: 0 8px;
+    padding-right: .4rem;
+  }
+}
+
+.thought {
+  h1 {
+    font-family: $serif-font-family;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: $brand-color-dark;
+  }
+
+  .post-content {
+    margin-bottom: $spacing-unit * 2;
   }
 }

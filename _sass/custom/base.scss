@@ -52,7 +52,7 @@ body {
 
   .border {
     display: inline-block;
-    border-top: 1px solid $pie-lattice-color-C;
+    border-top: 1px solid $pie-lattice-color-B;
     width: 20%;
     margin-bottom: 3rem;
   }
@@ -152,6 +152,20 @@ body {
       // color: #5c3045;
       color: $accent-color;
       text-decoration-thickness: 2px;
+    }
+
+    &.breadcrumb {
+      font-weight: 700;
+      font-size: 1.2rem;
+      display: block;
+
+      &:visited {
+        color: $brand-color;
+      }
+
+      &:hover {
+        text-decoration-color: $accent-color;
+      }
     }
   }
 
