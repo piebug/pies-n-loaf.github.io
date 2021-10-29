@@ -13,3 +13,9 @@ and then to use the value in the include:
 ```liquid
 {{ include.myVal }}
 ```
+
+to show drafts (located in `_drafts/`) use:
+
+```shell
+bundle exec jekyll serve --drafts
+```
