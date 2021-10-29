@@ -1,6 +1,8 @@
 # pie-dough
 
-pie dough is need to make pies
+pie dough is need to make pies.
+
+made with [jekyll](https://github.com/jekyll/jekyll) ([documentation](https://jekyllrb.com/)) using [minima v2.5.1](https://github.com/jekyll/minima/tree/v2.5.1) as the base theme.
 
 syntax to pass values into an include:
 
