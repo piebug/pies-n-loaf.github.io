@@ -23,6 +23,14 @@ body {
   }
 }
 
+.on-palm {
+  display: none;
+
+  @include media-query($on-palm) {
+    display: inherit;
+  }
+}
+
 // Header, footer, and nav styles
 .site-header,
 .site-footer {
@@ -99,6 +107,10 @@ body {
       display:inline-block;
       text-decoration: none;
       padding-left: 1.25rem;
+
+      @include media-query($on-palm) {
+        display: none;
+      }
     }
   }
 }
@@ -113,12 +125,31 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+
+    .footer-col {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 // Footer content
 .copyright {
   font-style: italic;
   margin-top: auto;
+
+  @include media-query($on-palm) {
+    &:not(.on-palm) {
+      display: none;
+    }
+
+    &.on-palm {
+      margin-top: $spacing-unit;
+    }
+  }
 }
 
 .social-media-list {
@@ -138,6 +169,10 @@ body {
 
     &:hover {
       text-decoration: solid underline $accent-color 2px;
+    }
+
+    @include media-query($on-palm) {
+      justify-content: center;
     }
   }
 }

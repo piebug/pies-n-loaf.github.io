@@ -66,6 +66,35 @@ body.home {
   .site-title {
     display: none;
   }
+
+  @include media-query($on-laptop) {
+    #pieLatticeA {
+      clip-path: polygon(29% 0%, 67% 0, 0 94%, 0 38.5%);
+    }
+
+    #pieLatticeC {
+      clip-path: polygon(30% 0%, 69.5% 0, 0 99%, 0 38.5%);
+    }
+  }
+
+  @include media-query($on-palm) {
+    #pieLatticeA {
+      clip-path: polygon(39.5% 0%, 94% 0, 0 94%, 0 38.5%);
+    }
+
+    #pieLatticeC {
+      clip-path: polygon(40% 0%, 97% 0, 0 99%, 0 38.5%);
+    }
+    
+    h1 {
+      font-size: 3.1em;
+    }
+
+    .site-intro p:first-child {
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
 }
 
 .pie-signature {

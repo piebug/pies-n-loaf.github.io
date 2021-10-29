@@ -5,6 +5,8 @@ $base-font-family: 'Karla', Helvetica, Arial, sans-serif;
 $base-font-size:   18px;
 
 $content-width:    840px;
+$on-laptop:        $content-width;
+$on-palm:          640px;
 $spacing-unit:     40px;
 
 $text-color:       #18181B;

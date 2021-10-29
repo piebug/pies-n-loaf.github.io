@@ -23,6 +23,15 @@
     min-width: 16%;
     margin-right: 1rem;
   }
+
+  @include media-query($on-laptop) {
+    flex-direction: column;
+
+    .post-date {
+      display: inline;
+      margin-inline-end: .5rem;
+    }
+  }
 }
 
 .post-list > li,
