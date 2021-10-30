@@ -33,3 +33,11 @@ I let the pie cool (miraculously, after waiting all that time), and learned my t
 ![Cooled, complete pie](/assets/img/first_pie/cool_pie.jpg)
 
 With faith, I finally cut in and ate my pie. I ate my pie for days. For weeks! And we lived happily ever after.
+
+![Slice of pie](/assets/img/first_pie/pie_slice.jpg)
+
+<div class="selfies">
+  <img src="/assets/img/first_pie/just_waiting_for_pie.jpg" alt="Just waiting for pie">
+  <img src="/assets/img/first_pie/yay_pie_in_oven.jpg" alt="Yay, pie's in the oven!">
+  <img src="/assets/img/first_pie/boo_pie_still_not_done.jpg" alt="Boo, pie's still not done...">
+</div>

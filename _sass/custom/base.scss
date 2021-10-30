@@ -210,3 +210,10 @@ body {
     font-weight: 700;
   }
 }
+
+.selfies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  margin-bottom: $spacing-unit / 2;
+}
