@@ -124,6 +124,11 @@ body {
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    text-align: left;
+
+    @include media-query($on-palm) {
+      text-align: center;
+    }
   }
 
   @include media-query($on-palm) {
