@@ -35,6 +35,13 @@ show_excerpts: true
 defaults:
   - scope:
       path: ""
+      type: "recipes"
+    values:
+      layout: "recipe"
+      class: "recipe"
+      parent: "recipes"
+  - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
