@@ -38,6 +38,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      class: "thought"
+      parent: "thoughts"
   - scope:
       path: ""
     values:
