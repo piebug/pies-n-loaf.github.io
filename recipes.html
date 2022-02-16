@@ -3,12 +3,30 @@ layout: page
 title: Recipes
 permalink: /recipes/
 ---
-recipes
+{%- if site.recipes.size > 0 -%}
+  <ul class="post-list">
+    {%- for recipe in site.recipes -%}
+    <li id="article-{{ forloop.index }}" role="article">
+      <header>
+        <h2>
+          <a class="post-link" href="{{ recipe.url | relative_url }}">
+            {{ recipe.title | escape }}
+          </a>
+        </h2>
+      </header>
 
-<ul>
-  {% for recipe in site.recipes %}
-    <li>
-      <h2><a href="{{ recipe.url }}">{{ recipe.title }}</a></h2>
+      <div class="post-info recipe-info">
+        <div class="post-meta">
+          {%- assign date_format = site.minima.date_format | default: "%-d %b %Y" -%}
+          <div class="post-date">{{ recipe.date | date: date_format }}</div>
+        </div>
+
+        <div class="recipe-ingredients">
+          <span class="list-title">Ingredients:</span> {{ recipe.ingredients | join: ", " }}
+        </div>
     </li>
-  {% endfor %}
-</ul>
+    {%- endfor -%}
+  </ul>
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+{%- endif -%}
