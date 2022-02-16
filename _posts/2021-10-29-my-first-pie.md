@@ -1,5 +1,4 @@
 ---
-layout: post
 tags: ["real pie", "actual cooking"]
 ---
 My first pie was an apple pie I made for Thanksgiving 2020. It was a Pandemic Pie&mdash;pre-COVID, I was much less interested in spending an entire day covered in flour, butter, and sweat. Quarantine awakened a part of me that needed to smash and mutilate my food in order to enjoy it.
