@@ -2,9 +2,9 @@
 layout: post
 ---
 {%- if page.summary -%}
-  <p class="summary">
-    {{ page.summary }}
-  </p>
+  <div class="summary">
+    {{ page.summary | markdownify }}
+  </div>
 {%- endif -%}
 
 <h2>Ingredients</h2>

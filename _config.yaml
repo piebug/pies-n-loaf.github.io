@@ -40,6 +40,7 @@ defaults:
       layout: "recipe"
       class: "recipe"
       parent: "recipes"
+      category: "recipe"
   - scope:
       path: ""
       type: "posts"
