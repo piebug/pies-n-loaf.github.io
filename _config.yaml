@@ -41,6 +41,7 @@ defaults:
       class: "recipe"
       parent: "recipes"
       category: "recipe"
+      permalink: /recipes/:title
   - scope:
       path: ""
       type: "posts"
@@ -48,6 +49,7 @@ defaults:
       layout: "post"
       class: "thought"
       parent: "thoughts"
+      permalink: /thoughts/:title
   - scope:
       path: ""
     values:
