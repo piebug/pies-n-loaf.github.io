@@ -46,6 +46,10 @@
   letter-spacing: .1rem;
 }
 
+.post-excerpt {
+  line-height: 1.5rem;
+}
+
 .post-categories,
 .post-tags {
   list-style: none;
@@ -132,6 +136,7 @@
   .list-title {
     text-transform: lowercase;
     font-weight: 800;
+    padding-right: .25rem;
   }
 
   .recipe-ingredients {
