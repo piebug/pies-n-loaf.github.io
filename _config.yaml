@@ -49,7 +49,7 @@ defaults:
       layout: "post"
       class: "thought"
       parent: "thoughts"
-      permalink: /thoughts/:title
+      permalink: /thoughts/:categories/:title
   - scope:
       path: ""
     values:
